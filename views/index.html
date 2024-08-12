@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Select a Meeting Slot</h1>
+    <div id="slots"></div>
+    <div id="bookingForm" style="display: none;">
+        <h2>Book a Slot</h2>
+        <form id="form">
+            <input type="hidden" id="selectedTime" name="time">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Book</button>
+        </form>
+        <div id="confirmation" style="display: none;"></div>
+    </div>
+    
+    <h1>All Booked Slots</h1>
+    <ul id="booked-slot-list"></ul>
+
+    <div id="bookedSlots">Loading...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
